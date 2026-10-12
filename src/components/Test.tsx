@@ -1,7 +1,7 @@
 const Test = () => {
     return (
         <>
-            <div className="font-extrabold">This is extrabold.</div>
+            <div className="font-bold">This is bold now actually.</div>
         </>
     )
 }
