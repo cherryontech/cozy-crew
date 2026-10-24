@@ -1,1 +1,37 @@
 @import 'tailwindcss';
+
+@theme {
+  --color-brand: #e8147a;
+  --color-brand-hover: #c91068;
+  --color-brand-disabled-bg: #f6c2de;
+  --color-brand-disabled-text: #e895c3;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full
+           font-semibold transition-colors duration-150
+           disabled:cursor-not-allowed;
+  }
+
+  /* sizes */
+  .btn-md { @apply px-6 py-3 text-base; }
+  .btn-sm { @apply px-4 py-2 text-sm; }
+  .btn-icon { @apply h-11 w-11 rounded-full p-0; }
+
+  /* variants */
+  .btn-primary {
+    @apply bg-brand text-black hover:bg-brand-hover;
+  }
+  .btn-primary:disabled {
+    @apply bg-brand-disabled-bg text-brand-disabled-text;
+  }
+
+  .btn-secondary {
+    @apply border border-black bg-white text-black hover:bg-gray-50;
+  }
+
+  .btn-quiet {
+    @apply bg-transparent p-0 text-black underline-offset-4 hover:underline;
+  }
+}
