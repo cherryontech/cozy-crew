@@ -1,5 +1,6 @@
 import type { ReactNode } from "react"
-
+import ImageAsset, { type ImageAsset as ImageAssetType } from './ImageAsset'
+// import Button from './Button'
 
 type Tone = 'default' | 'accent'
 type BadgeTone = 'success' | 'neutral'
@@ -32,13 +33,12 @@ function CardMedia({
   alt = '',
 }: {
   icon?: ReactNode
-  image?: string
-  avatar?: string
+  image?: ImageAssetType
+  avatar?: ImageAssetType
   alt?: string
 }) {
-  if (image) return <img className="card-media-image" src={image} alt={alt} />
-  if (avatar)
-    return <img className="card-media-avatar" src={avatar} alt={alt} />
+  if (image) return <ImageAsset className="card-media-image" asset={image} alt={alt} />
+  if (avatar) return <ImageAsset className="card-media-avatar" asset={avatar} alt={alt} />
   if (icon)
     return (
       <span className="card-media-icon" aria-hidden="true">
@@ -79,8 +79,8 @@ function CardBody({
 export type CardProps = {
   tone?: Tone
   icon?: ReactNode
-  image?: string
-  avatar?: string
+ image?: ImageAssetType
+  avatar?: ImageAssetType
   badge?: string
   badgeTone?: BadgeTone
   title: string
