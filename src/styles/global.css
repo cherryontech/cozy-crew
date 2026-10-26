@@ -1,1 +1,49 @@
 @import 'tailwindcss';
+
+@theme {
+  --color-brand: #e8147a;
+  --color-brand-hover: #c91068;
+  --color-brand-disabled-bg: #f6c2de;
+  --color-brand-disabled-text: #e895c3;
+  --color-accent-bg: #ece6fb;
+}
+
+@layer components {
+  /* cards */
+  .card {
+    @apply flex flex-col gap-3 rounded-2xl border border-black/5 bg-white p-6 shadow-sm;
+  }
+  .card-accent {
+    @apply border-transparent bg-accent-bg;
+  }
+
+  .card-media-icon {
+    @apply mb-1 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand-disabled-bg text-brand;
+  }
+  .card-accent .card-media-icon {
+    @apply bg-white;
+  }
+  .card-media-image {
+    @apply -mx-6 -mt-6 mb-1 h-44 w-[calc(100%+3rem)] rounded-t-2xl object-cover;
+  }
+  .card-media-avatar {
+    @apply mb-1 h-11 w-11 rounded-full object-cover;
+  }
+
+  .card-title {
+    @apply font-serif text-xl font-bold text-black;
+  }
+  .card-description {
+    @apply text-sm text-gray-600;
+  }
+
+  .badge {
+    @apply inline-flex w-fit items-center rounded-full px-3 py-1 text-xs font-semibold;
+  }
+  .badge-success {
+    @apply bg-green-100 text-green-700;
+  }
+  .badge-neutral {
+    @apply bg-transparent p-0 text-xs font-semibold uppercase tracking-wide text-gray-500;
+  }
+}
