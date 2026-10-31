@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import 'tailwindcss';
 
 @theme {
@@ -32,4 +34,51 @@
 
 .div-success {
     background: var(--color-success);
+    --font-lora: "Lora";
+    --font-inter: "Inter";
+}
+
+@layer base {
+    h1 {
+      font-family: var(--font-lora);
+      font-size: clamp(42px, 5vw, 72px);
+      line-height: 100%;
+    }
+
+    h2 {
+      font-family: var(--font-lora);
+      font-size: clamp(29px, 3vw, 48px);
+      line-height: 108%;
+    }
+    
+    h3 {
+      font-family: var(--font-lora);
+      font-size: 22px;
+      line-height: 120%;
+    }
+    
+    .text-body1 {
+      font-family: var(--font-inter);
+      font-size: 18px;
+      line-height: 170%;
+    }
+    
+    .text-body2 {
+      font-family: var(--font-inter);
+      font-size: 15px;
+      line-height: 165%;
+    }
+    
+    .text-body3 {
+      font-family: var(--font-inter);
+      font-size: 13px;
+      line-height: 160%;
+    }
+    
+    .text-body4 {
+      font-family: var(--font-inter);
+      font-size: 10px;
+      line-height: 150%;
+      letter-spacing: 0.08em;
+    }
 }
