@@ -3,6 +3,37 @@
 @import 'tailwindcss';
 
 @theme {
+    /* Primary tokens */
+    --color-primary: #d6388a;
+    --color-secondary: #efe8fa;
+    --color-background: #faf9f8;
+    --color-foreground: #171719;
+    --color-muted: #f4f0ed;
+    --color-success: #18865f;
+}
+
+.div-primary {
+    background: var(--color-primary);
+}
+
+.div-secondary {
+    background: var(--color-secondary);
+}
+
+.div-background {
+    background: var(--color-background);
+}
+
+.div-foreground {
+    background: var(--color-foreground);
+}
+
+.div-muted {
+    background: var(--color-muted);
+}
+
+.div-success {
+    background: var(--color-success);
     --font-lora: "Lora";
     --font-inter: "Inter";
 }
