@@ -18,9 +18,9 @@ import arrow_right_ink_16 from '../assets/promptful-assets/icons/library/arrow-r
 import corner_down_left_44_pink from '../assets/promptful-assets/icons/library/corner-down-left-44-pink.svg';
 
 const path_cards = [
-    { icon: personalized_lessons_icon, bg_color: "#fcf1f8", title: "Personalized Lessons", text: "Learn AI skills tailored to your job and career goals."},
-    { icon: real_world_icon, bg_color: "#eff0fe", title: "Real-world application", text: "Build confidence in using AI in your work."},
-    { icon: supprtive_icon, bg_color: "#edfafa", title: "Supportive communities", text: "Learn with other women and peers on a similar journey."},
+    { icon: personalized_lessons_icon, bg_color: "pink", title: "Personalized Lessons", text: "Learn AI skills tailored to your job and career goals."},
+    { icon: real_world_icon, bg_color: "purple", title: "Real-world application", text: "Build confidence in using AI in your work."},
+    { icon: supprtive_icon, bg_color: "blue", title: "Supportive communities", text: "Learn with other women and peers on a similar journey."},
 ];
 
 const exploration_cards = [
@@ -29,6 +29,20 @@ const exploration_cards = [
     { icon: career_product_strategy, title: "Product & Strategy"},
     { icon: career_education, title: "Education"},
 ];
+
+
+type PathIconVariant = "pink" | "purple" | "blue";
+
+interface PathCardProps {
+    icon: SVGElement;
+    bg_color: PathIconVariant;
+    title: string;
+    text: string;
+}
+interface ExplortationCardProps {
+    icon: SVGElement;
+    title: string;
+}
 
 
 const HomePage = () => {
@@ -44,7 +58,7 @@ const HomePage = () => {
                     <p className='text-body2 p-text'>
                         Ready to begin your AI learning journey? Take our Pathfinder Quiz to get personalized lessons and explore curated resources from around the web to upskill in AI for your career. The workforce is evolving, and you change along with it.
                     </p>
-                    <Button className="hero-btn">Start learning</Button>
+                    <Button variant='primary' icon={arrow_right_ink_16} href="/#" className="hero-btn">Start learning</Button>
                 </div>
                 <div className="image-container-hero">
                     <ImageAsset asset={hero_home_image} alt="hero image of a woman with a laptop" width={600}/>
@@ -59,7 +73,7 @@ const HomePage = () => {
                     <div className='tag text-body3'>YOUR OWN PATH</div>
                     <h2 className='font-bold'>Courses designed for you</h2>
                     <p className='text-container text-body3 p-text'>Set your career area, current AI skill level, and daily learning time to get personalized AI lessons with practical applications and real-world exercises.</p>
-                    <Button className='path-section-btn'>Take the Pathfinder Quiz to create my learning path</Button>
+                    <Button variant='primary' icon={null} href="/#" className='path-section-btn'>Take the Pathfinder Quiz to create my learning path</Button>
                 </div>
                     <div className="path-section-card">
                         <h3 className='font-bold'>How our 3-question quiz works</h3>
@@ -98,21 +112,21 @@ const HomePage = () => {
                     ))}
                 </div> 
             </div>
-            <Button variant='secondary'>Explore our Career Library </Button>
+            <Button variant='secondary' icon={arrow_right_ink_16} href="/#">Explore our Career Library </Button>
         </section>
         <section className='communities-section'>
             <div className='tag'>GROW WITH PEERS</div>
             <h2 className='font-bold'>Become a part of one of our many communities</h2>
             <p className='text-container p-text'>Learning is better when done together. Join PROMPTFUL communities to connect with peers, share what you’re learning, and get support on your learning journey.</p>
-            <Button variant='secondary'>Learn about our Communities</Button>
+            <Button variant='secondary' icon={arrow_right_ink_16} href="/#">Learn about our Communities</Button>
         </section>
     </>);
 }
 
-const PathCard = ({icon, bg_color, title, text}) => {
+const PathCard = ({icon, bg_color, title, text}: PathCardProps) => {
     return (
         <div className='path-card'>
-            <ImageAsset className="path-icon" asset={icon} alt={`Icon representing ${title}`}/>
+            <ImageAsset className="path-icon purple" asset={icon} alt={`Icon representing ${title}`}/>
             <div className='text-container'>
                 <div className="text-body2">{title}</div>
                 <div className='text-body3 p-text'>{text}</div>
@@ -121,7 +135,7 @@ const PathCard = ({icon, bg_color, title, text}) => {
     );
 }
 
-const ExplorationCard = ({icon, title}) => {
+const ExplorationCard = ({icon, title}: ExplortationCardProps) => {
     return (<div className='exploration-card'>
         <ImageAsset className="icon" asset={icon} alt={`Icon representing ${title}`}/>
         <div className='text-body3'>{title}</div>
