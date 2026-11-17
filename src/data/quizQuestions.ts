@@ -12,7 +12,7 @@ export const questions: QuizQuestion[] = [
         id: 'career',
         eyebrow: 'Your career area',
         reviewLabel: 'Career area',
-        title: 'What kind of work do you do?',
+        title: 'Which kind of work do you do?',
         description:
             "Choose a field that best fits your job. If you'd like to learn lessons from a field outside your own, select that field instead.",
         options: ['Healthcare', 'UX & Research', 'Product & Strategy', 'Education'],
