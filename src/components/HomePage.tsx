@@ -104,7 +104,7 @@ const HomePage = () => {
             <div className='text-container'>
                 <div className='tag text-body3'>COMMON LEARNING PATHS</div>
                 <h2 className='font-bold'>Explore by career area</h2>
-                <p className='p-text'>Skip the Pathfinder Quiz and dive straight into learning in your field.</p>
+                <p className='p-text'>Skip the Pathfinder Quiz and learn how different careers use AI.</p>
             </div>
 
                 <div className='exploration-card-list'>
@@ -117,8 +117,8 @@ const HomePage = () => {
         </section>
         <section className='communities-section'>
             <div className='tag'>GROW WITH PEERS</div>
-            <h2 className='font-bold'>Become a part of one of our many communities</h2>
-            <p className='text-container p-text'>Learning is better when done together. Join PROMPTFUL communities to connect with peers, share what you’re learning, and get support on your learning journey.</p>
+            <h2 className='font-bold'>Join one of our many communities</h2>
+            <p className='text-container p-text'>Learning is better when done together. Join Promptful communities to connect with others, share what you’re learning, and get support on your learning journey.</p>
             <Button variant='secondary' icon={arrow_right_ink_16} href="/#">Learn about our Communities</Button>
         </section>
     </>);
