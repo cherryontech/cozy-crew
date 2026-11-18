@@ -31,7 +31,7 @@ export default function LearnLanding() {
 
             <p className="text-body1 max-w-2xl text-gray-600">
                 Answer three quick questions to receive lesson suggestions based
-                on your job, AI experience, and available learning time.
+                on your career area, AI skill level, and available learning time.
             </p>
 
             <ul className="flex flex-wrap justify-center gap-3">
