@@ -50,18 +50,19 @@ const HomePage = () => {
         <section className='hero-section'>
             <div className="section-container">
                 <div className="left-container-hero">
-                    <div className='tag text-body3'>CRAFTING PATHS & GUIDING FUTURES</div>
-                    <h1 className='font-bold'>Grow in AI. Direct your future.</h1>
+                    <div className='tag text-body3'>HOME</div>
+                    <h1 className='font-bold'>Craft your path.</h1>
+                    <h1 className='font-bold'> Guide your future.</h1>
                     <p className='text-body2 p-text'>
-                        We at PROMPTFUL aim to encourage women and other underrepresented genders to grow AI skills for today's job market. Many jobs now rely on AI, but women and other underrepresented genders often don't receive the necessary AI training. That ends today with PROMPTFUL.
+                        Some women and other people of underrepresented genders need help growing their AI skills for today's job market. Many jobs now rely on this technology, but women and their peers often don't receive the necessary training for it. Promptful provides that training.
                     </p>
                     <p className='text-body2 p-text'>
-                        Ready to begin your AI learning journey? Take our Pathfinder Quiz to get personalized lessons and explore curated resources from around the web to upskill in AI for your career. The workforce is evolving, and you change along with it.
+                        Ready to begin your AI learning journey? Take our Pathfinder Quiz to get personalized lessons or explore resources we have curated from around the web.
                     </p>
                     <Button variant='primary' icon={arrow_right_ink_16} href="/#" className="hero-btn">Start learning</Button>
                 </div>
                 <div className="image-container-hero">
-                    <ImageAsset asset={hero_home_image} alt="hero image of a woman with a laptop" width={600}/>
+                    <ImageAsset asset={hero_home_image} alt="A woman building her AI skills on her laptop" width={600}/>
                 </div>
             </div>
             
