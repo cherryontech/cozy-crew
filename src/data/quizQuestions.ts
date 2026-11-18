@@ -19,7 +19,7 @@ export const questions: QuizQuestion[] = [
     },
     {
         id: 'skill',
-        eyebrow: 'YOUR AI EXPERIENCE',
+        eyebrow: 'YOUR AI SKILL LEVEL',
         reviewLabel: 'AI skill level',
         title: 'What is your current AI skill level?',
         description:
