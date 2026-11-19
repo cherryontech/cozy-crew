@@ -82,7 +82,7 @@ const Header = () => {
                         </div>
                     </li>
                     <li>
-                        <a href="/community" className="text-body1">
+                        <a href="/communities" className="text-body1">
                             Communities
                         </a>
                     </li>
