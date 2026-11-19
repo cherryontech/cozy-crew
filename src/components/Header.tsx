@@ -72,7 +72,7 @@ const Header = () => {
             <nav className="nav-menu" aria-label="Main navigation">
                 <ul className="link-list">
                     <li>
-                        <a href="/home" className="text-body1">
+                        <a href="/" className="text-body1">
                             Home
                         </a>
                     </li>
