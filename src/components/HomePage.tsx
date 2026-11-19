@@ -59,7 +59,7 @@ const HomePage = () => {
                     <p className='text-body2 p-text'>
                         Ready to begin your AI learning journey? Take our Pathfinder Quiz to get personalized lessons or explore resources we have curated from around the web.
                     </p>
-                    <Button variant='primary' icon={arrow_right_ink_16} href="/#" className="hero-btn">Start learning</Button>
+                    <Button variant='primary' icon={arrow_right_ink_16} href="/pathfinder-quiz" className="hero-btn">Start learning</Button>
                 </div>
                 <div className="image-container-hero">
                     <ImageAsset asset={hero_home_image} alt="A woman building her AI skills on her laptop" width={600}/>
@@ -74,7 +74,7 @@ const HomePage = () => {
                     <div className='tag text-body3'>YOUR OWN PATH</div>
                     <h2 className='font-bold'>Courses designed for you</h2>
                     <p className='text-container text-body3 p-text'>Set your career area, current AI skill level, and daily learning time to get personalized AI lessons with practical applications and real-world exercises.</p>
-                    <Button variant='primary' icon={null} href="/#" className='path-section-btn'>Take the Pathfinder Quiz to create my learning path</Button>
+                    <Button variant='primary' icon={null} href="/pathfinder-quiz" className='path-section-btn'>Take the Pathfinder Quiz to create my learning path</Button>
                 </div>
                     <div className="path-section-card">
                         <h3 className='font-bold'>How our 3-question quiz works</h3>
