@@ -59,7 +59,7 @@ const HomePage = () => {
                     <p className='text-body2 p-text'>
                         Ready to begin your AI learning journey? Take our Pathfinder Quiz to get personalized lessons or explore resources we have curated from around the web.
                     </p>
-                    <Button variant='primary' icon={arrow_right_ink_16} href="/pathfinder-quiz" className="hero-btn">Start learning</Button>
+                    <Button variant='primary' icon={arrow_right_ink_16} href="/#" className="hero-btn">Start learning</Button>
                 </div>
                 <div className="image-container-hero">
                     <ImageAsset asset={hero_home_image} alt="A woman building her AI skills on her laptop" width={600}/>
