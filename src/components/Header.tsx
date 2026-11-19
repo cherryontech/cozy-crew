@@ -5,11 +5,11 @@ import Button from './Button'
 import promptfulLogo from '../assets/promptful-logo.svg'
 
 const dropdownLinks = [
-    { title: 'Pathfinder Quiz', href: '/#' },
-    { title: 'My Learning Path', href: '/#' },
-    { title: 'Resource Hub', href: '/#' },
+    { title: 'Pathfinder Quiz', href: '/pathfinder-quiz' },
+    { title: 'My Learning Path', href: '/learning-path' },
+    { title: 'Resource Hub', href: '/resources' },
     { title: 'Careers Library', href: '/#' },
-    { title: 'My Progress', href: '/#' },
+    { title: 'My Progress', href: '/progress' },
 ]
 
 const DropdownMenu = () => {
