@@ -18,7 +18,7 @@ import arrow_right_ink_16 from '../assets/promptful-assets/icons/library/arrow-r
 import corner_down_left_44_pink from '../assets/promptful-assets/icons/library/corner-down-left-44-pink.svg';
 
 const path_cards = [
-    { icon: personalized_lessons_icon, bg_color: "pink", title: "Personalized Lessons", text: "Learn AI skills tailored to your job and career goals."},
+    { icon: personalized_lessons_icon, bg_color: "pink", title: "Personalized lessons", text: "Learn AI skills tailored to your job and career goals."},
     { icon: real_world_icon, bg_color: "purple", title: "Real-world application", text: "Build confidence in using AI in your work."},
     { icon: supprtive_icon, bg_color: "blue", title: "Supportive communities", text: "Learn with other women and peers on a similar journey."},
 ];
