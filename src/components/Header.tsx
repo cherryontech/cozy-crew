@@ -72,7 +72,7 @@ const Header = () => {
             <nav className="nav-menu" aria-label="Main navigation">
                 <ul className="link-list">
                     <li>
-                        <a href="#" className="text-body1">
+                        <a href="/home" className="text-body1">
                             Home
                         </a>
                     </li>
@@ -82,12 +82,12 @@ const Header = () => {
                         </div>
                     </li>
                     <li>
-                        <a href="#" className="text-body1">
+                        <a href="/community" className="text-body1">
                             Communities
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="text-body1">
+                        <a href="/about" className="text-body1">
                             About
                         </a>
                     </li>
