@@ -113,13 +113,13 @@ const HomePage = () => {
                     ))}
                 </div> 
             </div>
-            <Button variant='secondary' icon={arrow_right_ink_16} href="/#">Explore our Career Library </Button>
+            <Button variant='secondary' icon={arrow_right_ink_16} href="/#">Explore our Careers Library </Button>
         </section>
         <section className='communities-section'>
             <div className='tag'>GROW WITH PEERS</div>
             <h2 className='font-bold'>Join one of our many communities</h2>
             <p className='text-container p-text'>Learning is better when done together. Join Promptful communities to connect with others, share what you’re learning, and get support on your learning journey.</p>
-            <Button variant='secondary' icon={arrow_right_ink_16} href="/#">Learn about our Communities</Button>
+            <Button variant='secondary' icon={arrow_right_ink_16} href="/communities">Learn about our Communities</Button>
         </section>
     </>);
 }
