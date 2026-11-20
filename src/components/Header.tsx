@@ -5,11 +5,11 @@ import Button from './Button'
 import promptfulLogo from '../assets/promptful-logo.svg'
 
 const dropdownLinks = [
-    { title: 'Pathfinder Quiz', href: '/#' },
-    { title: 'My Learning Path', href: '/#' },
-    { title: 'Resource Hub', href: '/#' },
+    { title: 'Pathfinder Quiz', href: '/pathfinder-quiz' },
+    { title: 'My Learning Path', href: '/learning-path' },
+    { title: 'Resource Hub', href: '/resources' },
     { title: 'Careers Library', href: '/#' },
-    { title: 'My Progress', href: '/#' },
+    { title: 'My Progress', href: '/progress' },
 ]
 
 const DropdownMenu = () => {
@@ -72,7 +72,7 @@ const Header = () => {
             <nav className="nav-menu" aria-label="Main navigation">
                 <ul className="link-list">
                     <li>
-                        <a href="#" className="text-body1">
+                        <a href="/" className="text-body1">
                             Home
                         </a>
                     </li>
@@ -82,12 +82,12 @@ const Header = () => {
                         </div>
                     </li>
                     <li>
-                        <a href="#" className="text-body1">
+                        <a href="/communities" className="text-body1">
                             Communities
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="text-body1">
+                        <a href="/about" className="text-body1">
                             About
                         </a>
                     </li>

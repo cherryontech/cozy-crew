@@ -18,7 +18,7 @@ import arrow_right_ink_16 from '../assets/promptful-assets/icons/library/arrow-r
 import corner_down_left_44_pink from '../assets/promptful-assets/icons/library/corner-down-left-44-pink.svg';
 
 const path_cards = [
-    { icon: personalized_lessons_icon, bg_color: "pink", title: "Personalized Lessons", text: "Learn AI skills tailored to your job and career goals."},
+    { icon: personalized_lessons_icon, bg_color: "pink", title: "Personalized lessons", text: "Learn AI skills tailored to your job and career goals."},
     { icon: real_world_icon, bg_color: "purple", title: "Real-world application", text: "Build confidence in using AI in your work."},
     { icon: supprtive_icon, bg_color: "blue", title: "Supportive communities", text: "Learn with other women and peers on a similar journey."},
 ];
@@ -50,18 +50,19 @@ const HomePage = () => {
         <section className='hero-section'>
             <div className="section-container">
                 <div className="left-container-hero">
-                    <div className='tag text-body3'>CRAFTING PATHS & GUIDING FUTURES</div>
-                    <h1 className='font-bold'>Grow in AI. Direct your future.</h1>
+                    <div className='tag text-body3'>HOME</div>
+                    <h1 className='font-bold'>Craft your path.</h1>
+                    <h1 className='font-bold'> Guide your future.</h1>
                     <p className='text-body2 p-text'>
-                        We at PROMPTFUL aim to encourage women and other underrepresented genders to grow AI skills for today's job market. Many jobs now rely on AI, but women and other underrepresented genders often don't receive the necessary AI training. That ends today with PROMPTFUL.
+                        Some women and other people of underrepresented genders need help growing their AI skills for today's job market. Many jobs now rely on this technology, but women and their peers often don't receive the necessary training for it. Promptful provides that training.
                     </p>
                     <p className='text-body2 p-text'>
-                        Ready to begin your AI learning journey? Take our Pathfinder Quiz to get personalized lessons and explore curated resources from around the web to upskill in AI for your career. The workforce is evolving, and you change along with it.
+                        Ready to begin your AI learning journey? Take our Pathfinder Quiz to get personalized lessons or explore resources we have curated from around the web.
                     </p>
                     <Button variant='primary' icon={arrow_right_ink_16} href="/#" className="hero-btn">Start learning</Button>
                 </div>
                 <div className="image-container-hero">
-                    <ImageAsset asset={hero_home_image} alt="hero image of a woman with a laptop" width={600}/>
+                    <ImageAsset asset={hero_home_image} alt="A woman building her AI skills on her laptop" width={600}/>
                 </div>
             </div>
             
@@ -73,7 +74,7 @@ const HomePage = () => {
                     <div className='tag text-body3'>YOUR OWN PATH</div>
                     <h2 className='font-bold'>Courses designed for you</h2>
                     <p className='text-container text-body3 p-text'>Set your career area, current AI skill level, and daily learning time to get personalized AI lessons with practical applications and real-world exercises.</p>
-                    <Button variant='primary' icon={null} href="/#" className='path-section-btn'>Take the Pathfinder Quiz to create my learning path</Button>
+                    <Button variant='primary' icon={null} href="/pathfinder-quiz" className='path-section-btn'>Take the Pathfinder Quiz to create my learning path</Button>
                 </div>
                     <div className="path-section-card">
                         <h3 className='font-bold'>How our 3-question quiz works</h3>
@@ -103,7 +104,7 @@ const HomePage = () => {
             <div className='text-container'>
                 <div className='tag text-body3'>COMMON LEARNING PATHS</div>
                 <h2 className='font-bold'>Explore by career area</h2>
-                <p className='p-text'>Skip the Pathfinder Quiz and dive straight into learning in your field.</p>
+                <p className='p-text'>Skip the Pathfinder Quiz and learn how different careers use AI.</p>
             </div>
 
                 <div className='exploration-card-list'>
@@ -112,13 +113,13 @@ const HomePage = () => {
                     ))}
                 </div> 
             </div>
-            <Button variant='secondary' icon={arrow_right_ink_16} href="/#">Explore our Career Library </Button>
+            <Button variant='secondary' icon={arrow_right_ink_16} href="/#">Explore our Careers Library </Button>
         </section>
         <section className='communities-section'>
             <div className='tag'>GROW WITH PEERS</div>
-            <h2 className='font-bold'>Become a part of one of our many communities</h2>
-            <p className='text-container p-text'>Learning is better when done together. Join PROMPTFUL communities to connect with peers, share what you’re learning, and get support on your learning journey.</p>
-            <Button variant='secondary' icon={arrow_right_ink_16} href="/#">Learn about our Communities</Button>
+            <h2 className='font-bold'>Join one of our many communities</h2>
+            <p className='text-container p-text'>Learning is better when done together. Join Promptful communities to connect with others, share what you’re learning, and get support on your learning journey.</p>
+            <Button variant='secondary' icon={arrow_right_ink_16} href="/communities">Learn about our Communities</Button>
         </section>
     </>);
 }
