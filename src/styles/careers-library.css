@@ -1,0 +1,227 @@
+/*
+  Careers Library page styles
+  Mobile-first; breakpoints mirror the rest of the site:
+    37.5rem → tablet
+    56rem   → desktop
+*/
+
+section {
+    padding: 25px 15px;
+}
+
+.p-text {
+    color: #504b50;
+}
+
+.tag {
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 11px;
+}
+
+/* ── Hero section ───────────────────────────────────────── */
+
+.cl-hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.cl-hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cl-hero-image-wrap {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cl-hero-figure {
+    position: relative;
+    margin: 0;
+    width: 100%;
+}
+
+.cl-hero-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.cl-stat-card {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 55%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+}
+
+.cl-stat-text {
+    font-style: italic;
+    font-family: var(--font-serif);
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    line-height: 1.4;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+/* ── Jobs with Momentum section ─────────────────────────── */
+
+.cl-momentum-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cl-momentum-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.cl-momentum-title-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
+}
+
+.cl-momentum-heading {
+    text-transform: uppercase;
+    font-size: clamp(32px, 9vw, 48px);
+    line-height: 1.0;
+}
+
+.cl-filter-select {
+    appearance: none;
+    background-color: transparent;
+    border: 1.5px solid var(--color-foreground);
+    border-radius: 999px;
+    padding: 8px 36px 8px 16px;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    color: var(--color-foreground);
+    cursor: pointer;
+    flex-shrink: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23171719' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+
+.cl-job-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cl-job-card {
+    background: #fff;
+    border: 1px solid #e8e4df;
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: box-shadow 150ms ease, transform 150ms ease;
+}
+
+.cl-job-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.cl-job-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cl-job-icon-bg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #fce8f4;
+}
+
+.cl-job-icon-bg img {
+    width: 20px;
+    height: 20px;
+}
+
+.cl-job-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cl-skills {
+    color: #9b9598;
+}
+
+.cl-role-link {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cl-role-link:hover {
+    text-decoration: underline;
+}
+
+/* ── Tablet (37.5rem) ───────────────────────────────────── */
+
+@media (min-width: 37.5rem) {
+    .cl-job-card-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .cl-momentum-heading {
+        font-size: clamp(32px, 6vw, 48px);
+    }
+}
+
+/* ── Desktop (56rem) ────────────────────────────────────── */
+
+@media (min-width: 56rem) {
+    section {
+        padding: 25px 20px;
+    }
+
+    .cl-hero-section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        padding: 45px;
+    }
+
+    .cl-hero-content {
+        width: 500px;
+        flex-shrink: 0;
+    }
+
+    .cl-hero-image-wrap {
+        flex: 1;
+        max-width: 600px;
+    }
+
+    .cl-momentum-section {
+        padding: 45px;
+    }
+
+    .cl-momentum-heading {
+        font-size: 48px;
+    }
+}
