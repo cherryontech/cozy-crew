@@ -1,0 +1,482 @@
+/*
+- purple section backround - #eee8f9
+*/
+
+section {
+    padding: 25px 15px;
+}
+
+.hero-section {
+
+}
+
+.p-text {
+    color: #504b50;
+}
+.tag {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: 11px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.left-container-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.tag-container {
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+}
+
+.image-container {
+    max-width: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.hero-figure {
+    position: relative;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .hero-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .hero-caption {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 55%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    font-style: italic;
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    font-family: var(--font-serif);
+    line-height: 1.5;
+    color: #1a1a1a;
+  }
+
+.mission-section {
+    background: #eee8f9;
+}
+.mission-section .section-container {
+    text-align: center;
+    gap: 15px;
+}
+
+.story-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-section .section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin: 0;
+  }
+  
+  .quote-flourish {
+    width: 0.15rem;
+    height: 1.125rem;
+    background: #b92d73;
+    flex: 0 0 auto;
+    margin-top: 0.7em;
+  }
+  
+  .quote-text {
+    font-family: var(--font-serif);
+    flex: 1;
+    margin: 0;
+  }
+
+  .story-section .image-container {
+    order: 2;
+  }
+  
+  .story-section .text-container {
+    order: 1;
+  }
+
+.problem-section .left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bullet-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .bullet-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    border-top: 1.5px solid #e7e4df;
+  }
+  
+  .bullet-point-flourish {
+    width: 1.25rem;
+    height: 0.125rem;
+    background: #b92d73;
+    flex: 0 0 auto;
+    margin-top: 0.7em;
+    border-radius: 999px;
+  }
+  
+  .bullet-point-text {
+    flex: 1;
+    padding-top: 0.25rem;
+  }  
+
+  .progress-bar-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e7e4df;
+    border-radius: 15px;
+    padding: 25px;
+    gap: 15px;
+  }
+
+  .learning-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+.learning-section .section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.learning-cards-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+
+.card {
+    transition-property: box-shadow, transform;
+    transition-duration: 150ms;
+    transition-timing-function: ease;
+}
+.card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.learning-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e7e4df;
+
+    &.text-container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+.values-section {
+    background: #eee8f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.values-section .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-top {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.values-bottom-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.value-card {
+    border-top: 2px solid #c5add6;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 10px
+}
+
+.impact-section .section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.impact-card-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 5px;
+}
+
+.impact-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #e7e4df;
+    padding: 20px 25px;
+    gap: 5px;
+
+    & .title {
+        font-size: 32px;
+        color: var(--color-primary);
+    }
+}
+
+.teammember-section .section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teammember-section .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.teammember-section .member-card-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.quiz-section {
+    background: #eee8f9;
+}
+.quiz-section .section-container, .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.button-container {
+    gap: 10px;
+}
+
+@media (min-width: 37.5rem) {
+
+    section {
+        padding: 35px 25px;
+    }
+
+    .hero-caption {
+        font-size: clamp(0.875rem, 2vw, 1.125rem);
+        padding: 1.25rem 1.5rem;
+      }
+
+    .story-section .section-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .story-section .image-container {
+        order: 3;
+    }
+    
+    .story-section .text-container {
+        order: 2;
+    }
+
+    .learning-cards-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .values-bottom-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .impact-card-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .teammember-section .text-container {
+        width: 100%;
+        justify-self: start;
+    }
+
+    .teammember-section .member-card-list{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+  
+}
+
+@media (min-width: 56rem) {
+    section {
+        padding: 35px 25px;
+    }
+    .section-container {
+        display: flex;
+        flex-direction: row;
+        gap: 45px;
+        align-items: center;
+        justify-content: center;
+    } 
+    .left-container-hero {
+        width: 600px;
+    }
+
+    .hero-caption {
+        font-size: clamp(0.875rem, 1.2vw, 1.125rem);
+      }
+
+    .story-section .section-container {
+        width: min(100%, 1436px);
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-areas:
+          "image tag"
+          "image text";
+        gap: 3rem 5rem;
+        align-items: start;
+      }
+    
+      .story-section .tag {
+        grid-area: tag;
+      }
+    
+      .story-section .image-container {
+        grid-area: image;
+        order: unset;
+      }
+    
+      .story-section .text-container {
+        grid-area: text;
+        order: unset;
+      }
+
+    .problem-section .section-container {
+        gap: 200px;
+    }
+
+    .mission-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mission-section .section-container {
+        flex-direction: column;
+        width: 800px;
+    }
+
+    .problem-section .section-container {
+        width: 100%;
+    }
+
+    .problem-section .left-container {
+        width: 600px;
+    }
+
+    .learning-section .section-container {
+        width: min(100%, 1436px);
+    }
+
+    .learning-cards-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* need to change this*/
+        gap: 14px;
+    }
+
+    .learning-card {
+        padding: 30px;
+    
+        &.text-container {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+    }
+
+    .values-section .section-container {
+        width: min(100%, 1436px);
+    }
+
+    .values-bottom-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .impact-card-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .teammember-section .section-container { 
+
+    }
+
+    .teammember-section .member-card-list {
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr); 
+    }
+
+    .quiz-section .section-container {
+        gap: 15px;
+    }
+    .button-container {
+        flex-direction: row;
+    }
+}
