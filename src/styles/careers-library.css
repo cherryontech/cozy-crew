@@ -6,7 +6,7 @@
 */
 
 section {
-    padding: 25px 15px;
+    padding: 25px 25px;
 }
 
 .p-text {
@@ -68,6 +68,10 @@ section {
     line-height: 1.4;
     color: #1a1a1a;
     margin: 0;
+}
+
+.cl-hero-btn {
+    max-width: 200px;
 }
 
 /* ── Jobs with Momentum section ─────────────────────────── */
@@ -178,9 +182,129 @@ section {
     text-decoration: underline;
 }
 
+/* ── Currently know section ─────────────────────────────── */
+
+.currently-know-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 72px; /* extra space after last cl-job-card */
+}
+
+.currently-know-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.currently-know-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.currently-know-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e8e4df;
+    border-radius: 14px;
+    padding: 36px 20px;
+    gap: 16px;
+    cursor: pointer;
+    transition: box-shadow 150ms ease, transform 150ms ease;
+}
+
+.currently-know-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.currently-know-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.career-based-section {
+    background: #eee8f9;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.career-based-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    padding-top: 15px
+}
+
+.career-based-btn {
+    max-width: 200px;
+}
+
+.keep-going-section {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.keep-going-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    padding-top: 15px
+}
+
+.keep-going-image-wrap {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.keep-going-figure {
+    position: relative;
+    margin: 0;
+    width: 100%;
+}
+
+.keep-going-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.start-journey-section {
+    background: #eee8f9;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    text-align: center;
+    align-items: center;
+}
+
+.start-journey-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.start-journey-btn {
+    max-width: 200px;
+}
+
 /* ── Tablet (37.5rem) ───────────────────────────────────── */
 
 @media (min-width: 37.5rem) {
+    section {
+        padding: 35px 25px;
+    }
     .cl-job-card-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -189,6 +313,16 @@ section {
 
     .cl-momentum-heading {
         font-size: clamp(32px, 6vw, 48px);
+    }
+
+    .currently-know-card-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .keep-going-section {
+        gap: 35px;
     }
 }
 
@@ -223,5 +357,25 @@ section {
 
     .cl-momentum-heading {
         font-size: 48px;
+    }
+    .currently-know-card-list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+    .keep-going-section {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-areas:
+          "image text";
+        gap: 3rem 5rem;
+        align-items: start;
+    }
+    .keep-going-header {
+        grid-area: text;
+    }
+
+    .keep-going-image-wrap {
+        grid-area: image;
     }
 }
