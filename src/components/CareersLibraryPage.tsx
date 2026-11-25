@@ -88,6 +88,8 @@ const CareersLibraryPage = () => {
                 </div>
                 <select className='cl-filter-select' aria-label="Filter roles">
                     <option>All roles</option>
+                    <option>All roles?</option>
+                    <option>All roles!</option>
                 </select>
             </div>
             <div className='cl-job-card-list'>
