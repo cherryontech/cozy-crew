@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro'
+import ProgressBar from '../components/ProgressBar';
+import { StatusBadge, CheckmarkStatusBadge } from '../components/StatusBadge';
+
+---
+
+<Layout>
+    <div>
+        <div class="status-badge-list">
+            <StatusBadge text="Recommended" variant='pink'/>
+            <StatusBadge text="In progress" variant='purple'/>
+            <CheckmarkStatusBadge text="Completed" variant="green"/>
+            <StatusBadge text="10 min" variant='white'/>
+        </div>
+        <br/>
+        <ProgressBar label="AI for UX Research" progressValue={68}/>
+    </div>
+</Layout>

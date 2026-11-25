@@ -1,0 +1,67 @@
+---
+import { Image } from 'astro:assets'
+import logo from '../assets/promptful-logo.png'
+
+const navLinks = [
+    { label: 'Home', href: '/' },
+    { label: 'Pathfinder Quiz', href: '/pathfinder-quiz' },
+    { label: 'My Learning Path', href: '/learning-path' },
+    { label: 'Resource Hub', href: '/resources' },
+    { label: 'My Progress', href: '/progress' },
+    { label: 'Communities', href: '/communities' },
+    { label: 'About', href: '/about' },
+    { label: 'Design System', href: '/design-system' },
+]
+
+const legalLinks = [
+    { label: 'Privacy', href: '/privacy' },
+    { label: 'Accessibility', href: '/accessibility' },
+    { label: 'Terms', href: '/terms' },
+    { label: 'Site map', href: '/sitemap' },
+]
+---
+
+<footer class="bg-[#19191b] px-6 py-12 text-white md:px-24">
+    <div class="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+        <div class="flex items-center gap-6">
+            <Image src={logo} alt="Promptful" height={80} class="h-20 w-auto" />
+            <p class="font-bold">© 2026 PROMPTFUL</p>
+        </div>
+
+        <nav aria-label="Footer">
+            <ul class="flex flex-wrap gap-x-9 gap-y-3">
+                {navLinks.map((link) => (
+                    <li>
+                        <a href={link.href} class="hover:underline">
+                            {link.label}
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </nav>
+    </div>
+
+    <hr class="my-8 border-white/30" />
+
+    <div class="flex flex-col gap-4 text-sm md:flex-row md:items-center md:justify-between">
+        <p>Crafting paths and guiding futures since 2026.</p>
+        <p>Created with support from the Cherry on Tech program.</p>
+
+        <nav aria-label="Legal">
+            <ul class="flex flex-wrap items-center">
+                {legalLinks.map((link, i) => (
+                    <li>
+                        {i > 0 && (
+                            <span aria-hidden="true" class="px-1">
+                                ·
+                            </span>
+                        )}
+                        <a href={link.href} class="hover:underline">
+                            {link.label}
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </nav>
+    </div>
+</footer>

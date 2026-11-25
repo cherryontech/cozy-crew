@@ -1,0 +1,107 @@
+new_path,original_file,usage
+icons/in-use/career-healthcare.svg,d379b.svg,Career areas grid (Roles page) + Pathfinder career options (data.ts)
+icons/in-use/career-ux-design.svg,2da19.svg,Career areas grid + Pathfinder career options
+icons/in-use/career-product-strategy.svg,a69f0.svg,Career areas grid + Pathfinder career options
+icons/in-use/career-education.svg,041a7.svg,Career areas grid + Pathfinder career options
+icons/in-use/career-more-areas.svg,a0722.svg,Career areas grid – “More Career Areas” tile
+icons/in-use/benefit-personalized-lessons.svg,27d70.svg,Home – benefits row
+icons/in-use/benefit-real-world-application.svg,6425d.svg,Home – benefits row
+icons/in-use/benefit-supportive-communities.svg,01a0e.svg,Home – benefits row
+icons/library/stethoscope-22-purple.svg,0004b.svg,Not referenced in current code
+icons/library/user-16-purple.svg,01947.svg,Not referenced in current code
+icons/library/circle-13-gray.svg,047a7.svg,Not referenced in current code
+icons/library/check-13-pink.svg,05068.svg,Not referenced in current code
+icons/library/search-17-gray.svg,0932b.svg,Not referenced in current code
+icons/library/users-19-purple.svg,0cec4.svg,Not referenced in current code
+icons/library/wand-sparkles-17-pink.svg,11d15.svg,Not referenced in current code
+icons/library/play-13-white.svg,136e5.svg,Not referenced in current code
+(duplicate of career-education.svg),15832.svg,Not used – removed
+icons/library/target-18-purple.svg,168de.svg,Not referenced in current code
+icons/library/trending-up-17-green.svg,17fe4.svg,Not referenced in current code
+icons/library/arrow-right-20-white.svg,18191.svg,Not referenced in current code
+icons/library/users-16-purple.svg,1b550.svg,Not referenced in current code
+icons/library/layout-template-18-pink.svg,1d5da.svg,Not referenced in current code
+icons/library/clock-3-15-gray.svg,1fd94.svg,Not referenced in current code
+icons/library/chevron-down-15-purple.svg,26d84.svg,Not referenced in current code
+(duplicate of career-education.svg),29711.svg,Not used – removed
+icons/library/map-16-white.svg,2a5a5.svg,Not referenced in current code
+(duplicate of career-product-strategy.svg),2b5be.svg,Not used – removed
+icons/library/calendar-days-19-purple.svg,2d1f4.svg,Not referenced in current code
+(duplicate of career-more-areas.svg),2fcef.svg,Not used – removed
+(duplicate of career-ux-design.svg),30b8b.svg,Not used – removed
+icons/library/arrow-right-16-purple.svg,33b3b.svg,Not referenced in current code
+icons/library/target-18-purple-v2.svg,36c2a.svg,Not referenced in current code
+icons/library/palette-22-purple.svg,38dd6.svg,Not referenced in current code
+icons/library/arrow-right-17-white.svg,3bbbf.svg,Not referenced in current code
+icons/library/arrow-right-16-white.svg,3cbe5.svg,Not referenced in current code
+icons/library/arrow-right-16-ink.svg,3ece1.svg,Not referenced in current code
+icons/library/circle-help-18-gray-dark.svg,446d7.svg,Not referenced in current code
+icons/library/compass-22-purple.svg,4503d.svg,Not referenced in current code
+icons/library/check-14-green.svg,49b4c.svg,Not referenced in current code
+icons/library/chevron-up-16-gray.svg,4b7cd.svg,Not referenced in current code
+icons/library/briefcase-business-22-pink.svg,4b805.svg,Not referenced in current code
+icons/library/messages-square-18-pink.svg,51607.svg,Not referenced in current code
+icons/library/bookmark-16-gray.svg,543f7.svg,Not referenced in current code
+icons/library/sparkles-16-pink.svg,5ba06.svg,Not referenced in current code
+icons/library/shield-check-18-purple.svg,5faf8.svg,Not referenced in current code
+icons/library/arrow-right-20-pink.svg,63271.svg,Not referenced in current code
+icons/library/book-open-21-pink.svg,65dab.svg,Not referenced in current code
+(duplicate of career-more-areas.svg),67d1e.svg,Not used – removed
+icons/library/ellipsis-17-gray.svg,708db.svg,Not referenced in current code
+icons/library/circle-check-17-purple.svg,78f27.svg,Not referenced in current code
+(duplicate of career-healthcare.svg),7ac51.svg,Not used – removed
+icons/library/ellipsis-16-gray.svg,7e15d.svg,Not referenced in current code
+icons/library/scan-search-18-pink.svg,82b24.svg,Not referenced in current code
+icons/library/sparkles-17-pink.svg,8ba44.svg,Not referenced in current code
+icons/library/trending-up-21-pink.svg,91832.svg,Not referenced in current code
+icons/library/chevron-down-14-purple.svg,939c3.svg,Not referenced in current code
+icons/library/check-13-green.svg,944be.svg,Not referenced in current code
+(duplicate of career-ux-design.svg),9d267.svg,Not used – removed
+icons/library/sliders-horizontal-16-gray-dark.svg,a08a5.svg,Not referenced in current code
+icons/library/bar-chart-3-16-teal.svg,a1a5c.svg,Not referenced in current code
+icons/library/check-16-green-bright.svg,a25a4.svg,Not referenced in current code
+icons/library/arrow-left-17-ink.svg,a4186.svg,Not referenced in current code
+icons/library/bookmark-16-gray-v2.svg,aa387.svg,Not referenced in current code
+icons/library/arrow-right-14-pink.svg,ab624.svg,Not referenced in current code
+icons/library/lightbulb-18-ink.svg,ac015.svg,Not referenced in current code
+icons/library/target-16-pink.svg,b08e5.svg,Not referenced in current code
+icons/library/lightbulb-18-ink-v2.svg,b7497.svg,Not referenced in current code
+icons/library/message-circle-19-purple.svg,bab71.svg,Not referenced in current code
+(duplicate of career-healthcare.svg),c373a.svg,Not used – removed
+icons/library/corner-down-left-44-pink.svg,c3784.svg,Not referenced in current code
+icons/library/sparkles-20-pink.svg,cdc66.svg,Not referenced in current code
+icons/library/sparkles-17-pink-v2.svg,ce5f3.svg,Not referenced in current code
+icons/library/users-21-pink.svg,d1a61.svg,Not referenced in current code
+icons/library/arrow-right-18-ink.svg,db366.svg,Not referenced in current code
+icons/library/map-21-pink.svg,dd2d7.svg,Not referenced in current code
+(duplicate of career-ux-design.svg),e25ef.svg,Not used – removed
+icons/library/minus-12-pink.svg,e3fc8.svg,Not referenced in current code
+(duplicate of career-product-strategy.svg),e7245.svg,Not used – removed
+icons/library/chevron-down-14-gray.svg,e86fc.svg,Not referenced in current code
+icons/library/circle-16-gray-lighter.svg,ea227.svg,Not referenced in current code
+(duplicate of career-healthcare.svg),ea971.svg,Not used – removed
+icons/library/circle-check-19-purple.svg,f2040.svg,Not referenced in current code
+icons/library/chevron-down-16-gray.svg,f48dd.svg,Not referenced in current code
+icons/library/heart-handshake-19-purple.svg,f76bd.svg,Not referenced in current code
+icons/library/circle-help-17-gray-dark.svg,fba4e.svg,Not referenced in current code
+icons/library/play-12-white.svg,fcec8.svg,Not referenced in current code
+icons/library/book-open-16-gray-light.svg,fd350.svg,Not referenced in current code
+icons/library/clock-3-14-gray.svg,ff1db.svg,Not referenced in current code
+images/hero/hero-home-woman-laptop.png,c859a.png,Home hero + Design System image card
+images/hero/hero-about-two-women-laptop.png,79e42.png,About hero + Design System asset list
+images/hero/hero-community-woman-laptop.png,87a94.png,Community hero
+images/hero/hero-mentors-group-workshop.png,afe03.png,Mentors/community section hero + Design System asset list
+images/editorial/about-story-workshop.png,e23c3.png,About – story section
+images/editorial/roles-keep-going-collaboration.png,102fc.png,Roles – “Keep going” section + Design System asset list
+images/team/team-leila-morgan.png,37de2.png,About – team (Founder & CEO)
+images/team/team-nia-okafor.png,c98d1.png,About – team (Chief Learning Officer)
+images/team/team-sofia-alvarez.png,ff2aa.png,About – team (Head of Product)
+images/team/team-mai-tran.png,02e8c.png,About – team (Community Lead)
+images/mentors/mentor-maya-chen.png,551df.png,Mentors grid + Design System profile card
+images/mentors/mentor-amara-yusuf.png,4cffb.png,Mentors grid
+images/mentors/mentor-elena-romero.png,4ca25.png,Mentors grid
+images/mentors/mentor-jordan-brooks.png,8e5e8.png,Mentors grid
+images/unused/avatar-92-a.png,273b9.png,Not referenced in current code
+images/unused/avatar-92-b.png,61f69.png,Not referenced in current code
+logos/promptful-logo.svg (header),promptful-logo.png,Replace PNG with SVG
+logos/promptful-logo-reversed.svg (footer),promptful-logo-footer-reversed.png,Replace PNG with SVG

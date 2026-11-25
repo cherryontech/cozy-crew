@@ -1,0 +1,9 @@
+<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="layout-template">
+<g id="Vector">
+<path d="M15 2.25H3C2.58579 2.25 2.25 2.58579 2.25 3V6.75C2.25 7.16421 2.58579 7.5 3 7.5H15C15.4142 7.5 15.75 7.16421 15.75 6.75V3C15.75 2.58579 15.4142 2.25 15 2.25Z" stroke="#E91E8C" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M8.25 10.5H3C2.58579 10.5 2.25 10.8358 2.25 11.25V15C2.25 15.4142 2.58579 15.75 3 15.75H8.25C8.66421 15.75 9 15.4142 9 15V11.25C9 10.8358 8.66421 10.5 8.25 10.5Z" stroke="#E91E8C" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M15 10.5H12.75C12.3358 10.5 12 10.8358 12 11.25V15C12 15.4142 12.3358 15.75 12.75 15.75H15C15.4142 15.75 15.75 15.4142 15.75 15V11.25C15.75 10.8358 15.4142 10.5 15 10.5Z" stroke="#E91E8C" stroke-width="1.8" stroke-linecap="round"/>
+</g>
+</g>
+</svg>
