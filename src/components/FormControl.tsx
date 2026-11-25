@@ -1,3 +1,5 @@
+import '../styles/form-controls.css'
+
 type SelectProps = {
     label: string;
     name: string;
