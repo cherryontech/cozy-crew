@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+.form-control-display {
+  border: 1px solid #e7e4df;
+  padding: 25px 30px;
+  background: #fff;
+}
+.form-control-display .subhead {
+  color: #504b51;
+}
+
+@layer components {
+  .radio-btn { @apply flex flex-row gap-3.5;} 
+
+  .radio-btn input[type='radio']{ @apply appearance-none m-0 w-[1em] h-[1em] rounded-xl border-[0.07em] border-solid border-[#8f8f9c] 
+    outline-[0.01em] outline-solid outline-[#8f8f9c] outline-offset-[-0.05em] grid self-center place-content-center;}
+
+  .radio-btn input[type='radio']:checked, .radio-btn input[type='radio']:checked:hover { @apply border-[0.07em] border-solid 
+    outline-[0.07em] outline-solid;}
+  .radio-btn input[type='radio']:checked { @apply border-[#b92d73] outline-[#b92d73];}
+  .radio-btn input[type='radio']:checked:hover { @apply border-[#d54089] outline-[#d54089]; }
+
+  .radio-btn input[type='radio']::before {
+    content: "";
+    transform: scale(0);
+    @apply left-1/2 top-1/2 block h-[0.45em] w-[0.45em] rounded-full shadow-[inset_1em_1em_#b92d73];
+  }
+
+  .radio-btn input[type='radio']:hover::before {
+    @apply shadow-[inset_1em_1em_#d54089];
+  }
+
+  input[type="radio"]:checked::before {
+      transform: scale(1);
+  }
+
+  .radio-btn-label {
+    @apply text-[#504b50];
+  }
+
+  .textarea {
+    @apply w-full min-h-[56px] resize-y rounded-[6px] border border-[#d9d9d9] bg-white px-3 py-[10px] 
+    text-[13px] leading-[1.4] text-[#222] outline-none shadow-none placeholder:text-[#8f8f8f]
+     focus:border-[var(--color-primary)] focus:shadow-[0_0_0_2px_#f4e1ec];
+  }
+
+  .select-container {
+    @apply flex flex-col gap-4 w-90;
+  }
+
+  .select-tag {
+    @apply inline-flex min-w-[18rem] items-center justify-around gap-[10px] rounded-[10px] border-[1.25px] border-[#e7e4df] px-[13px] py-[15px];
+  }
+  
+  }
