@@ -50,6 +50,7 @@ export default function LearnLanding() {
                     href="/pathfinder-quiz"
                     icon={<ArrowIcon />}
                     iconPosition="end"
+                    className=''
                 >
                     Start our Pathfinder Quiz
                 </Button>

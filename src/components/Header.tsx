@@ -5,11 +5,11 @@ import Button from './Button'
 import promptfulLogo from '../assets/promptful-logo.svg'
 
 const dropdownLinks = [
-    { title: 'Pathfinder Quiz', href: '/#' },
-    { title: 'My Learning Path', href: '/#' },
-    { title: 'Resource Hub', href: '/#' },
-    { title: 'Careers Library', href: '/#' },
-    { title: 'My Progress', href: '/#' },
+    { title: 'Pathfinder Quiz', href: '/pathfinder-quiz' },
+    { title: 'My Learning Path', href: '/learning-path' },
+    { title: 'Resource Hub', href: '/resource-hub' },
+    { title: 'Careers Library', href: '/careers-library' },
+    { title: 'My Progress', href: '/my-progress' },
 ]
 
 const DropdownMenu = () => {
@@ -27,7 +27,7 @@ const DropdownMenu = () => {
                     <div className="dropdown-container text-body3 font-semibold">
                         {dropdownLinks.map((link, index) => {
                             return (
-                                <a className="" href={link.href} key={index}>
+                                <a className="dropdown-link" href={link.href} key={index}>
                                     {link.title}
                                 </a>
                             )
@@ -72,7 +72,7 @@ const Header = () => {
             <nav className="nav-menu" aria-label="Main navigation">
                 <ul className="link-list">
                     <li>
-                        <a href="#" className="text-body1">
+                        <a href="/" className="text-body1">
                             Home
                         </a>
                     </li>
@@ -82,23 +82,23 @@ const Header = () => {
                         </div>
                     </li>
                     <li>
-                        <a href="#" className="text-body1">
+                        <a href="/communities" className="text-body1">
                             Communities
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="text-body1">
+                        <a href="/about" className="text-body1">
                             About
                         </a>
                     </li>
                     <li className="button-list-mobile">
-                        <Button variant="quiet" size="md" href="/#">Log in &#10140;</Button>
+                        <Button variant="quiet" size="md" href="/#" icon={null} className=''>Log in &#10140;</Button>
                     </li>
                 </ul>
                  </nav>
                 <div className="button-list-desktop">
-                    <Button variant="quiet" size="md" href="/#">Log in &#10140;</Button>
-                    <Button variant="primary" size="md" href="/#">Sign Up &#10140;</Button>
+                    <Button variant="quiet" size="md" icon={null} className='' href="/login">Log in &#10140;</Button>
+                    <Button variant="primary" size="md" icon={null} className='' href="/signup">Sign Up &#10140;</Button>
                 </div>
         </header>
     )
