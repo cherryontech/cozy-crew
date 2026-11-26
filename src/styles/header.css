@@ -13,6 +13,7 @@
 .image-container {
     display: flex;
     align-items: center;
+    min-height: 70px;
 }
 
 .nav-toggle {
@@ -29,6 +30,7 @@
     right: 0;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     gap: 28px;
     padding: 22px 20px 26px;
     border-bottom: 1px solid #e7e4df;
@@ -132,13 +134,21 @@
 }
 
 .dropdown-container a {
-    padding: 8px 0;
+    padding: 10px 15px;
+    width: 250%;
 }
 
 .dropdown-container a:hover {
     border-radius: 10px;
     background: #fcf1f8;
     color: #b92d73;
+}
+
+.dropdown-container .dropdown-link::after {
+    content: none;
+}
+.dropdown-link::after {
+    content: none;
 }
 
 .button-list-mobile, .button-list-desktop {
@@ -201,6 +211,10 @@
     .nav-menu {
         padding: 24px;
     }
+    .dropdown-container a {
+        padding: 10px 15px;
+        width: 250%;
+    }
 }
 
 @media (min-width: 56rem) {
@@ -259,5 +273,9 @@
 
     .dropdown-container a {
         padding: 10px 5px;
+    }
+    .dropdown-container a {
+        padding: 10px 15px;
+        width: 100%;
     }
 }

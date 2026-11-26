@@ -56,9 +56,9 @@ export default function PathfinderQuiz() {
 
             <div className="mt-6 flex justify-end gap-4">
                 {step > 0 && (
-                     <Button variant="secondary" onClick={handleBack}>Back</Button>
+                     <Button variant="secondary" onClick={handleBack} icon={null} className=''>Back</Button>
                     )}
-                    <Button onClick={nextAction} disabled={!hasAnswer}>{nextLabel}</Button>
+                    <Button onClick={nextAction} disabled={!hasAnswer} icon={null} className=''>{nextLabel}</Button>
             </div>
         </div>
     )
