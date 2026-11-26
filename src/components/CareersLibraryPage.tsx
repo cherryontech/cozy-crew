@@ -66,7 +66,7 @@ const CareersLibraryPage = () => {
                     practical learning path at your pace, all designed with women's lives, jobs, and
                     career transitions in mind.
                 </p>
-                <Button variant='primary' href='/#' icon={null} className='cl-hero-btn'>Explore job pathways →</Button>
+                <Button variant='primary' href='/learning-path' icon={null} className='cl-hero-btn'>Explore job pathways →</Button>
             </div>
             <div className='cl-hero-image-wrap'>
                 <figure className='cl-hero-figure'>
@@ -81,6 +81,7 @@ const CareersLibraryPage = () => {
             </div>
         </section>
         <section className='cl-momentum-section'>
+            <div className='section-container'>
             <div className='cl-momentum-header'>
                 <div className='cl-momentum-title-group'>
                     <div className='tag text-body3'>JOBS WITH MOMENTUM</div>
@@ -103,48 +104,57 @@ const CareersLibraryPage = () => {
                     />
                 ))}
             </div>
+            </div>
         </section>
         <section className='currently-know-section'>
-            <div className='currently-know-header'>
-                <div className='tag text-body3'>START WITH WHAT YOU ALREADY KNOW</div>
-                <h2 className='font-bold'>Add to your current skill set</h2>
-                <p className='text-body2 p-text'>
-                    Every learning pathway teaches you AI techniques that work with your current career knowledge.
-                </p>
-            </div>
-            <div className='currently-know-card-list'>
-                {knowledge_cards.map(card => (
-                    <CareerKnowledgeCard key={card.title} logo={card.logo} title={card.title} />
-                ))}
+            <div className='section-container'>
+                <div className='currently-know-header'>
+                    <div className='tag text-body3'>START WITH WHAT YOU ALREADY KNOW</div>
+                    <h2 className='font-bold'>Add to your current skill set</h2>
+                    <p className='text-body2 p-text'>
+                        Every learning pathway teaches you AI techniques that work with your current career knowledge.
+                    </p>
+                </div>
+                <div className='currently-know-card-list'>
+                    {knowledge_cards.map(card => (
+                        <CareerKnowledgeCard key={card.title} logo={card.logo} title={card.title} />
+                    ))}
+                </div>
             </div>
     </section>        
         <section className='career-based-section'>
-            <div className='career-based-header'>
-                <div className='tag text-body3'>CAREER-BASED LEARNING</div>
-                <h2 className='font-bold'>From UX designer to AI experience strategist</h2>
-                <p className='text-body2 p-text'>Learn AI framing, evaluation, and facilitation in a relevant, guided learning pathway.</p>
+            <div className='section-container'>
+                <div className='career-based-header'>
+                    <div className='tag text-body3'>CAREER-BASED LEARNING</div>
+                    <h2 className='font-bold'>From UX designer to AI experience strategist</h2>
+                    <p className='text-body2 p-text'>Learn AI framing, evaluation, and facilitation in a relevant, guided learning pathway.</p>
+                </div>
+                <Button variant='primary' href='/learning-path' icon={null} className='career-based-btn'>View my pathway →</Button>
             </div>
-            <Button variant='primary' href='/#' icon={null} className='career-based-btn'>View my pathway →</Button>
         </section>
         <section className='keep-going-section'>
-            <div className='keep-going-header'>
-                <div className='tag text-body3'>KEEP GOING</div>
-                <h2 className='font-bold'>AI is for everyone</h2>
-                <p className='text-body2 p-text'>Everyone can get better at a skill if they keep practicing. Growing in AI allows women and their peers to grow in their careers and get the job and recognition they deserve.</p>
-            </div>
-            <div className='keep-going-image-wrap'>
-                <div className='keep-going-figure'>
-                   <ImageAsset asset={roles_keep_going} alt='image of five wommen at a table'/>
+            <div className='section-container'>
+                <div className='keep-going-header'>
+                    <div className='tag text-body3'>KEEP GOING</div>
+                    <h2 className='font-bold'>AI is for everyone</h2>
+                    <p className='text-body2 p-text'>Everyone can get better at a skill if they keep practicing. Growing in AI allows women and their peers to grow in their careers and get the job and recognition they deserve.</p>
+                </div>
+                <div className='keep-going-image-wrap'>
+                    <div className='keep-going-figure'>
+                    <ImageAsset asset={roles_keep_going} alt='image of five wommen at a table'/>
+                    </div>
                 </div>
             </div>
         </section>
         <section className='start-journey-section'>
+            <div className='section-container'>
             <div className='start-journey-header'>
                 <div className='tag text-body3'>START YOUR JOURNEY TODAY</div>
                 <h2 className='font-bold'>Discover a learning path that moves you forward</h2>
                 <p className='text-body2 p-text'>Answer a few questions and get a career-based learning path shaped around your experience and goals.</p>
             </div>
-            <Button variant='primary' href='/#' icon={null} className='start-journey-btn'>Find my learning path →</Button>
+            <Button variant='primary' href='/learning-path' icon={null} className='start-journey-btn'>Find my learning path →</Button>
+            </div>
         </section>
     </>);
 };
