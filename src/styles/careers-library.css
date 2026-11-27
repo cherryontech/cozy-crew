@@ -254,6 +254,7 @@ section {
     gap: 22px;
     align-items: center;
     height: 320px;
+    padding: 10px;
 }
 
 .career-based-section .section-container {
@@ -321,6 +322,7 @@ section {
     text-align: center;
     align-items: center;
     height: 300px;
+    padding: 10px;
 }
 
 .start-journey-section .section-container {

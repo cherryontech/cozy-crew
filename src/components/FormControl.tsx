@@ -1,9 +1,12 @@
 import '../styles/form-controls.css'
 
 type SelectProps = {
-    label: string;
+    label?: string;
     name: string;
+    containerClass?: string;
+    selectClass?: string;
     onChange?: React.ChangeEventHandler<HTMLSelectElement>;
+    value: string;
     children: React.ReactNode;
     id?: string;
   };
@@ -33,21 +36,28 @@ type SelectProps = {
     id?: string;
   };
 
+//select-container
 
-export const Select = ({name, label = '', id, children}: SelectProps) => {
+  export const Select = ({ name, label = "", id, children, containerClass = 'select-container', selectClass= 'select-tag text-body3', value, onChange }: SelectProps) => {
     return (
-        <div className="select-container">
-            <label className="text-body3">{label}</label>
-            <select className='select-tag text-body3' name={name} id={id}>
-                {children}
-            </select>
-        </div>
+      <div className={`${containerClass}`}>
+        <label className="text-body3">{label}</label>
+        <select
+          className={`${selectClass}`}
+          name={name}
+          id={id}
+          value={value}
+          onChange={onChange}
+        >
+          {children}
+        </select>
+      </div>
     );
-}
-
-export const Option = ({label, value}: RadioOption) => {
-    return(<option className="option-tag" value={value}>{label}</option>);
-}
+  };
+  
+  export const Option = ({ label, value }: { label: string; value: string }) => {
+    return <option className="option-tag" value={value}>{label}</option>;
+  };
 
 export const RadioGroup = ({name, options}: RadioGroupProps) => {
     return (<fieldset>

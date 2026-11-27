@@ -1,6 +1,8 @@
 import '../styles/careers-library.css';
 import Button from './Button';
 import ImageAsset from './ImageAsset';
+import { Select, Option } from './FormControl';
+import { useState } from 'react';
 
 import hero_community_woman_laptop from '../assets/promptful-assets/images/hero/hero-community-woman-laptop.png';
 import roles_keep_going from '../assets/promptful-assets/images/editorial/roles-keep-going-collaboration.png';
@@ -11,6 +13,7 @@ import career_education from '../assets/promptful-assets/icons/in-use/career-edu
 import career_more_areas from '../assets/promptful-assets/icons/in-use/career-more-areas.svg';
 import arrow_right_pink_20 from '../assets/promptful-assets/icons/library/arrow-right-20-pink.svg';
 import sparkles_pink from '../assets/promptful-assets/icons/library/sparkles-20-pink.svg';
+import type { SvgComponent } from 'astro/types';
 
 type GrowthLevel = 'High growth' | 'Moderate growth';
 
@@ -19,12 +22,28 @@ interface JobCardProps {
     description: string;
     skills: string[];
     growth: GrowthLevel;
+    roleType: string;
 }
 
 interface CareerKnowledgeCard {
-    logo: string;
+    logo: SvgComponent & ImageMetadata;
     title: string
 }
+
+const role_options = [
+    {
+        label: 'All Roles',
+        value: 'All Roles'
+    },
+    {
+        label: 'Design',
+        value: 'Design'
+    },
+    {
+        label: 'Research',
+        value: 'Research'
+    },
+]
 
 const job_cards: JobCardProps[] = [
     {
@@ -32,18 +51,21 @@ const job_cards: JobCardProps[] = [
         description: 'Turn customer and business needs into responsible AI product direction.',
         skills: ['Product & Strategy', 'Experiments', 'Analytics'],
         growth: 'High growth',
+        roleType: 'Research'
     },
     {
         title: 'UX Research Lead, AI',
         description: 'Guide ethical user research and build human insight into AI experiences.',
         skills: ['Research', 'Facilitation', 'Responsible AI'],
         growth: 'High growth',
+        roleType: 'Research'
     },
     {
         title: 'Learning Experience Designer',
         description: 'Create adaptive learning journeys that help people build practical AI skills.',
         skills: ['Content systems', 'Education', 'Facilitation'],
         growth: 'High growth',
+        roleType: 'Design'
     },
 ];
 
@@ -55,7 +77,17 @@ const knowledge_cards: CareerKnowledgeCard[] = [
     { logo: career_more_areas, title: 'More Career Areas' },
 ];
 
+
+
 const CareersLibraryPage = () => {
+
+    const [selectedRole, setSelectedRole] = useState('All Roles')
+
+    const filteredCards =
+        selectedRole === "All Roles"
+        ? job_cards
+        : job_cards.filter(card => card.roleType === selectedRole);
+
     return (<>
         <section className='cl-hero-section'>
             <div className='cl-hero-content'>
@@ -87,22 +119,29 @@ const CareersLibraryPage = () => {
                     <div className='tag text-body3'>JOBS WITH MOMENTUM</div>
                     <h2 className='font-bold cl-momentum-heading'>Careers with high AI growth</h2>
                 </div>
-                <select className='cl-filter-select' aria-label="Filter roles">
-                    <option>All roles</option>
-                    <option>All roles?</option>
-                    <option>All roles!</option>
-                </select>
+                <Select
+                    name="role-filter"
+                    containerClass=''
+                    selectClass="cl-filter-select"
+                    value={selectedRole}
+                    onChange={(e) => setSelectedRole(e.target.value)}
+                    >
+                    {role_options.map((option, index) => (
+                        <Option key={index} value={option.value} label={option.label} />
+                    ))}
+                </Select>
             </div>
             <div className='cl-job-card-list'>
-                {job_cards.map(card => (
-                    <JobCard
-                        key={card.title}
-                        title={card.title}
-                        description={card.description}
-                        skills={card.skills}
-                        growth={card.growth}
-                    />
-                ))}
+            {filteredCards.map(card => (
+                <JobCard
+                    key={card.title}
+                    title={card.title}
+                    description={card.description}
+                    skills={card.skills}
+                    growth={card.growth}
+                    roleType={card.roleType}
+                />
+            ))}
             </div>
             </div>
         </section>
@@ -173,7 +212,7 @@ const JobCard = ({ title, description, skills, growth }: JobCardProps) => {
                 <h3 className='font-bold'>{title}</h3>
                 <p className='text-body3 p-text'>{description}</p>
                 <p className='text-body3 cl-skills'>{skills.join(' · ')}</p>
-                <a href={`/${slug}`} className='text-body3 cl-role-link'>View {title} role →</a>
+                <a href={`/#`} className='text-body3 cl-role-link'>View {title} role →</a>
             </div>
         </div>
     );
