@@ -42,6 +42,7 @@ const DropdownMenu = () => {
 const Header = () => {
     return (
         <header className="navbar">
+            <div className='navbar-container'>
             <div className="image-container">
                 <a href='/'>
                     <ImageAsset
@@ -100,6 +101,7 @@ const Header = () => {
                     <Button variant="quiet" size="md" icon={null} className='' href="/login">Log in &#10140;</Button>
                     <Button variant="primary" size="md" icon={null} className='' href="/signup">Sign Up &#10140;</Button>
                 </div>
+            </div>
         </header>
     )
 }

@@ -4,10 +4,18 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 16px 20px;
     border-bottom: 1px solid #e7e4df;
     background: #fff;
     z-index: 1000;
+    max-height: 110px;
+}
+
+.navbar-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(100%, 1416px);
 }
 
 .image-container {
@@ -208,6 +216,10 @@
         padding: 18px 24px;
     }
 
+    .navbar-container {
+        padding: 18px 24px;
+    }
+
     .nav-menu {
         padding: 24px;
     }
@@ -219,6 +231,11 @@
 
 @media (min-width: 56rem) {
     .navbar {
+        padding: 20px 38px;
+        justify-content: center;
+    }
+
+    .navbar-container {
         padding: 20px 38px;
     }
 
