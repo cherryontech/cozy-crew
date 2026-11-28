@@ -1,0 +1,105 @@
+/*
+tag color - #b92d73
+external-resources and rh-feedback-section - #eee8f9
+card border - #e7e4df
+*/
+
+section {
+    padding: 25px 15px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: min(100%, 1416px);
+}
+
+.tag {
+    color: #b92d73;
+    font-weight: var(--font-weight-bold);
+    font-size: 11px;
+}
+
+.p-text {
+    color: #504b50;
+}
+
+.rh-hero-section .section-container {
+    gap: 15px;
+}
+
+.rh-hero-section .top-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.p-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-purple {
+    background: #eee8f9;
+    border: 1px solid #ddd1eb;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.external-resources {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+.external-resources .section-container {
+    align-items: start;
+    gap: 7px
+}
+
+.external-resources .description {
+    font-size: 12px;
+}
+
+.rh-career-area-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.career-area-select {
+    border: 1px solid #e7e4df;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    background: #fff;
+}
+
+.rh-feedback-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+.rh-feedback-section .section-container {
+    align-items: start;
+    gap: 15px;
+}
+
+.rh-feedback-section .btn-list {
+    display: flex;
+    gap: 15px;
+}
+
+@media (min-width: 37.5rem){
+
+}
+@media (min-width: 56rem){
+
+}
